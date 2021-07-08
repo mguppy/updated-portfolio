@@ -1,0 +1,228 @@
+/* Style applied throughout */
+:root {
+    --bright-turqoise: turquoise;
+    --white: antiquewhite;
+    --light: #fff;
+    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Formats header flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--bright-turqoise);
+    color: var(--white);
+    font-family: var(--font);
+}
+
+/* Formats my name */
+h1 {
+    font-size: 200%;
+}
+
+/* Formats the font for the body of the webpage*/
+main {
+    font-family: var(--font);
+}
+
+/* Formats the listing ul flexbox for the header and footer */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+/* Formats the links in the header section */
+nav a {
+    background-color: unset;
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Makes the header links light up when hovered over */
+nav a:hover {
+    color: var(--light);
+}
+
+/* Formats the flexbox in the banner section under the header */
+#myheader {
+    background-image: url("../Images/banner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 30vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* Formats the banner under the header */
+.banner-header {
+    font-size: 1.5rem;
+    color: var(--bright-turqoise);
+    background: var(--white);
+    margin: 0;
+    padding: 5px 10px;
+    display: inline;
+    line-height: 1.3;
+}
+
+/* Sets up the flexboxes for each section of my portfolio */
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    margin: 1% auto;
+}
+
+/* Formats the titles for each of the portfolio sections */
+.about-me-description {
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+    padding: 50px 50px 50px 50px;
+    flex: 0 0 20%;
+    width: 20%;
+}
+
+/* Formats all h2 headers */
+h2 {
+    color: turquoise;
+}
+
+/* Formats the content sections of the portfolio */
+.about-me-info {
+    display: flex;
+    margin-left: 3%;
+    flex: 0 0 80%;
+    font-size: 100%;
+    height: 100%;
+    border-left: 5px solid var(--bright-turqoise);
+    padding-left: 5px;
+    flex-wrap: wrap;
+}
+
+/* Formats my photo */
+.my-photo {
+    float: left;
+    width: 20%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 143px;
+}
+
+/* Formats the large project card box */
+.Horisseon-item-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Formats the smaller project card boxes */
+.other-code-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Formats the text boxes within all of the project card boxes */
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: var(--bright-turqoise);
+    background: var(--white);   
+}
+
+/* Formats the Horisseon image */
+.Horisseon-item-img {
+    width: 822px;
+    height: 400px;
+}
+
+/* Formats the small project cards */
+.small-card {
+    padding: 5px;
+}
+
+/* Formats the images for the small project cards */
+.small-card-img {
+    width: 400px;
+    height: 250px;
+}
+
+/* Formats the footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--bright-turqoise);
+    color: var(--white);
+    font-family: var(--font);
+}
+
+#github-icon {
+    height: 45px;
+    width: 50px;
+}
+
+#linkedin-icon {
+    height: 45px;
+    width: 65px;
+}
+
+#about-me-title {
+    position: absolute;
+    width: 200px;
+    height: 66px;
+    left: 38px;
+    top: 150px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+/* #about-me-information {
+    position: absolute;
+    width: 1086px;
+    height: 145px;
+    left: 300px;
+    top: 126px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+} */
+
+/* Formats the links within the footer section */
+footer nav ul li {
+    padding-right: 1em;
+}
+
+@media screen and (max-width: 500px) {
+    .banner-header,
+    .about-me,
+    .about-me-description,
+    .about-me-info,
+    .Horisseon-item-container,
+    .bottom-left,
+    .small-card {
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav ul li > * {
+        width: 100%;
+    }
+}
